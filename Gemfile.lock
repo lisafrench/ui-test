@@ -67,6 +67,7 @@ DEPENDENCIES
   guard-coffeescript
   guard-sass
   haml (>= 3.0)
+  neat
   rack-test (>= 0.5.6)
   rake
   sinatra
