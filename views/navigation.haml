@@ -1,15 +1,17 @@
 - core_navigation = ['Home', 'Destinations', 'Shop', 'Hotels', 'Flights', 'Contact']
 - sub_navigation = ['Images', 'Video', 'Games']
 
-%img.logo{src: "images/logo.png"}
-.navigation
+%nav.navigation-main
   %ul
     - core_navigation.each do |item|
       %li
         %a{href: '#'}
           = item
+  %a{id: 'pull'}
+    %img.logo-nav{:src => 'images/logo.png'}
+    %img.menu{:src => 'http://cdn.css-tricks.com/wp-content/uploads/2012/10/threelines.png'}
 
-.sub-navigation
+%nav.navigation-sub
   %ul
     - sub_navigation.each do |item|
       %li

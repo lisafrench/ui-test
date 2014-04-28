@@ -3,11 +3,13 @@
     %title Lonely Planet UI Test
     %link{rel: "stylesheet", href: 'css/style.css'}
     %script{src: '//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'}
+    %script{src: 'js/navigation-main.js'}
     %script{src: 'js/read-more.js'}
-
   %body
-    = haml :nav
-    = yield
+    %img.logo{:src => "images/logo.png"}
+    = haml :navigation
+    %main.container
+      = yield
     = haml :footer
 
     
