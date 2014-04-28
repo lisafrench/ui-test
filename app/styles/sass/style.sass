@@ -1,0 +1,231 @@
+// Base
+@import base/base.sass
+
+//Layouts
+
+// Vendors
+@import vendor/bourbon/bourbon.scss
+@import vendor/neat/neat.scss
+
+//Partials
+@import _grid-settings.sass
+
+body
+  font-family: $fixed-font-family
+  padding: 0
+  margin: 0
+
+// Main Navigation
+nav.navigation-main
+  font-family: $base-font-family
+  text-align: center
+  background-color: $dark-blue
+  @include media($tablet)
+    height: auto
+  @include media($mobile)
+    border-bottom: 0
+  ul
+    @include outer-container
+    height: 11%
+    padding-left: 0
+    margin-bottom: 0
+    @include media($tablet)
+      width: 100%
+      display: none
+      height: auto
+    li
+      @include span-columns(3 of 12)
+      width: 7.3em
+      display: inline
+      text-align: center
+      height: 60px
+      margin: 0
+      background-color: $dark-blue
+      @include media($tablet)
+        width: 50%
+        float: left
+        position: relative
+        display: block
+      &:nth-child(n+4)
+        float: right
+      a
+        color: $white
+        text-decoration: none
+        line-height: 60px
+        padding: 0 15px
+        &:hover
+          text-decoration: underline
+  a#pull
+    display: none
+    @include media($tablet)
+      display: block
+      width: 100%
+      position: relative
+      background-color: $dark-blue
+      height: 10%
+      img.menu
+        float: right
+        max-width: 100%
+        max-height: 100%
+        margin: auto
+        display: block
+      img.logo-nav
+        padding-top: 1%
+        padding-bottom: 1%   
+        padding-left: 12%
+        @include media($mobile)
+          padding-left: 22%
+  a#pull:after
+    @include media($tablet)
+      background: url('http://cdn.css-tricks.com/wp-content/uploads/2012/10/threelines.png') no-repeat
+      width: 30px
+      height: 30px
+      display: inline-block
+      position: absolute
+      right: 15px
+      top: 10px
+
+// Sub Navigation
+.navigation-sub
+  font-family: $base-font-family
+  margin-bottom: 3%
+  text-align: center
+  background-color: $light-grayish-blue
+  ul
+    display: inline-block
+    height:  60px
+    margin: 0
+    padding: 0
+    li
+      float: left
+      height: 60px
+      width: auto
+      margin: 0
+      a
+        color: $very-dark-cyan
+        text-decoration: none
+        line-height: 60px
+        padding: 0 15px
+        &:hover
+          text-decoration: underline
+
+.container
+  margin: 0 auto
+  overflow: hidden
+  padding-left: 1%
+  padding-right: 1%
+  @include outer-container
+  &:last-child
+    margin: 0 auto
+
+.read-more-container
+  margin-top: 30px
+  height: 400px
+  overflow: hidden
+  line-height: 1.5
+  h2
+    margin-top: 20px
+    font-size: 16px
+    text-transform: uppercase
+    letter-spacing: 0.01em
+
+ul
+  list-style: none
+
+// Logo
+.logo
+  position: absolute
+  left: 50%
+  margin-left: -41px
+  top: 9px
+  @include media($tablet)
+    left: 10%
+
+// Buttons
+.button
+  background-color: $dark-blue
+  padding: 10px
+  color: $white
+  margin-top: 10px
+  text-decoration: none
+
+// Headings
+h1
+  font-size: 20px
+
+h3
+  font-size: 14px
+  color: $very-dark-cyan
+
+// Image section
+.images-container
+  margin-top: 50px
+  overflow: hidden
+  @include media($mobile)
+    @include span-columns(4 or 12)
+
+.first-image, .second-image, .third-image
+  float: left
+  width: 30%
+  margin-right: 5%
+  img
+    max-width: 100%
+
+.third-image
+  margin-right: 0
+
+.image-container
+  height: 35%
+  margin-bottom: 20px
+  overflow: hidden
+  @include media($desktop)
+    height: 30%
+  @include media($tablet)
+    height: 20%
+  @include media($mobile)
+    height: 15%
+
+// Lightbox
+.lightbox
+  background-color: $light-grayish-blue
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  .lightboxImage
+    position: absolute
+    left: 30%
+    top: 30%
+    border: 10px solid $white
+
+// Footer
+footer
+  font-family: $base-font-family
+  overflow: hidden
+  font-size: 12px
+  background-color: $light-grayish-blue
+  margin-top: 3%
+  padding-top: 2%
+  .container
+    padding: 0
+    nav
+      @include outer-container
+      float: left
+      width: 25%
+      margin-bottom: 2%
+    h3
+      text-transform: uppercase
+      margin-bottom: 2%
+    ul
+      margin: 0
+      padding: 0
+      li
+        margin: 0
+        display: block
+        padding: 4% 0
+    a
+      text-decoration: none
+      color: $very-dark-blue
+      &:hover
+        text-decoration: underline
