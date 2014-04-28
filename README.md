@@ -25,9 +25,9 @@ I also focused on the request to think of project scalability by making all area
 
 Below I have outlined the changes I made so you do not have to dig through the code for comments. Here is an overview of the changes I implemented:
 
- 
+    
 
-**Gems**
+#### Gems
 
 - Updated gemfile to include bourbon (4.0.1) and neat (1.6.0) for responsive templating
 
@@ -35,7 +35,7 @@ Below I have outlined the changes I made so you do not have to dig through the c
 
  
 
-**File Structure**
+#### File Structure
 
 - I broke the app folder into higher-level categories:
 
@@ -67,7 +67,7 @@ Below I have outlined the changes I made so you do not have to dig through the c
 
  
 
-**Responsive Design**
+#### Responsive Design
 
 - Utilized bourbon/neat for responsive scaffolding. Chose these because they are lightweight and play well with Sass and Ruby.
 
@@ -75,7 +75,7 @@ Below I have outlined the changes I made so you do not have to dig through the c
 
  
 
-**Web Standards**
+#### Web Standards
 
 - Replaced a few html tags with nav and section to be more specific
 
@@ -89,7 +89,7 @@ to:
 
  
 
-**Clean Code**
+#### Clean Code
 
 - Cleaned up whitespace where applicable
 
@@ -99,7 +99,7 @@ to:
 
  
 
-**Semantics**
+#### Semantics
 
 - Created font color variables names to be more specific based on names provided at ColorHexa ([http://www.colorhexa.com](http://www.colorhexa.com)). This way, if the application expands in the future to include a dozen shades of blue, there is a convention for the color names to be specific.
 
