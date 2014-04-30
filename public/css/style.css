@@ -149,7 +149,7 @@ nav.navigation-main {
     max-width: 68em;
     margin-left: auto;
     margin-right: auto;
-    height: 13%;
+    height: 10%;
     padding-left: 0;
     margin-bottom: 0; }
     nav.navigation-main ul:after {
@@ -197,7 +197,7 @@ nav.navigation-main {
         width: 100%;
         position: relative;
         background-color: #124385;
-        height: 13%; }
+        height: 9%; }
         nav.navigation-main a#pull img.menu {
           float: right;
           max-width: 100%;
