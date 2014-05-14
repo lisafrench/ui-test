@@ -7,6 +7,10 @@ Lisa French's Additions For Lonely Planet UI-Test
 
 ------------------------------------------------------------------------------
 
+To view the original project, visit [https://github.com/lonelyplanet/ui-test](https://github.com/lonelyplanet/ui-test).
+
+
+
 Thank you for the opportunity to work on this project. I enjoyed exploring several new technologies for the first time--Haml, CoffeeScript, Sass, Bourbon/Neat, and Ruby Gems.
 
  
