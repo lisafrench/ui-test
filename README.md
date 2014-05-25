@@ -83,7 +83,9 @@ Below I have outlined the changes I made so you do not have to dig through the c
 
 - Replaced a few html tags with nav and section to be more specific
 
-- Expanded font selection from:
+- Expanded font selection
+
+Ex:
 
         	> font-family: Georgia
 
